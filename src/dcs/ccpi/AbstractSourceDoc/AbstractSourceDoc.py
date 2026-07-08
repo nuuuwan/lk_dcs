@@ -41,6 +41,10 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
     def get_name(cls):
         pass
 
+    @classmethod
+    def get_table_index(cls):
+        return 0
+
     @property
     def month_str(self):
         return self.date_str[:7]
@@ -119,7 +123,9 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
 
     @classmethod
     def from_pdf_file(cls, pdf_file):
-        arr_list = pdf_file.get_tables()[0].df.values.tolist()
+        arr_list = pdf_file.get_tables()[
+            cls.get_table_index()
+        ].df.values.tolist()
         log.debug(f"Read {len(arr_list)} rows from {pdf_file}")
 
         d_list = cls.parse_d_list(arr_list)
