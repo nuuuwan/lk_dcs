@@ -30,15 +30,15 @@ class ReadmeMixin:
             TimeFormat.DATE.parse(self.date_str)
         )
         latest_date_str = latest_date_str.replace("-", "--").replace(" ", "_")
-        update_time_str = TimeFormat.TIME.format(Time.now())
-        update_time_str = update_time_str.replace("-", "--").replace(" ", "_")
+        update_date_str = TimeFormat.DATE.format(Time.now())
+        update_date_str = update_date_str.replace("-", "--").replace(" ", "_")
         return [
             f"# {self.label}",
             "",
             "![Latest Data](https://img.shields.io/badge/"
             + f"latest_data-{latest_date_str}-green)",
             "![Last Checked](https://img.shields.io/badge/"
-            + f"last_checked-{update_time_str}-purple)",
+            + f"last_checked-{update_date_str}-purple)",
             "",
         ]
 
