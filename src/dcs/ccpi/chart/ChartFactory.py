@@ -27,15 +27,20 @@ class ChartFactory:
     def build_all():
         chart_files = []
         for chart_cls in ChartFactory.list():
-            chart = chart_cls.latest()
-            chart_files.append(chart.build())
+            for chart in chart_cls.latest_list():
+                chart_files.append(chart.build())
         return chart_files
+
+    @staticmethod
+    def chart_lines(chart):
+        name = chart.name
+        path = f"{DIR_IMAGES}/{chart.chart_id}.png"
+        return [f"### {name}", "", f"![{name}]({path})", ""]
 
     @staticmethod
     def get_readme_lines():
         lines = ["## Charts", ""]
         for chart_cls in ChartFactory.list():
-            name = chart_cls.get_name()
-            path = f"{DIR_IMAGES}/{chart_cls.get_chart_id()}.png"
-            lines += [f"### {name}", "", f"![{name}]({path})", ""]
+            for chart in chart_cls.latest_list():
+                lines += ChartFactory.chart_lines(chart)
         return lines

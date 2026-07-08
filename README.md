@@ -30,9 +30,61 @@ This repo contains public data parsed from [https://www.statistics.gov.lk/](http
 
 ![Inflation by Food and Non Food](images/ccpi/inflation-by-food-and-non-food.png)
 
-### CCPI by Subgroup
+### CCPI - All
 
-![CCPI by Subgroup](images/ccpi/ccpi-by-subgroup.png)
+![CCPI - All](images/ccpi/ccpi-by-subgroup-all.png)
+
+### CCPI - Food
+
+![CCPI - Food](images/ccpi/ccpi-by-subgroup-food.png)
+
+### CCPI - Non Food
+
+![CCPI - Non Food](images/ccpi/ccpi-by-subgroup-non-food.png)
+
+### CCPI - Alcoholic Beverages And Tobacco
+
+![CCPI - Alcoholic Beverages And Tobacco](images/ccpi/ccpi-by-subgroup-alcoholic-beverages-and-tobacco.png)
+
+### CCPI - Clothing And Footwear
+
+![CCPI - Clothing And Footwear](images/ccpi/ccpi-by-subgroup-clothing-and-footwear.png)
+
+### CCPI - Housing Water Electricity Gas And Other Fuels
+
+![CCPI - Housing Water Electricity Gas And Other Fuels](images/ccpi/ccpi-by-subgroup-housing-water-electricity-gas-and-other-fuels.png)
+
+### CCPI - Furnishings Household Equipment And Routine Household Maintenance
+
+![CCPI - Furnishings Household Equipment And Routine Household Maintenance](images/ccpi/ccpi-by-subgroup-furnishings-household-equipment-and-routine-household-maintenance.png)
+
+### CCPI - Health
+
+![CCPI - Health](images/ccpi/ccpi-by-subgroup-health.png)
+
+### CCPI - Transport
+
+![CCPI - Transport](images/ccpi/ccpi-by-subgroup-transport.png)
+
+### CCPI - Communication
+
+![CCPI - Communication](images/ccpi/ccpi-by-subgroup-communication.png)
+
+### CCPI - Recreation And Culture
+
+![CCPI - Recreation And Culture](images/ccpi/ccpi-by-subgroup-recreation-and-culture.png)
+
+### CCPI - Education
+
+![CCPI - Education](images/ccpi/ccpi-by-subgroup-education.png)
+
+### CCPI - Restaurants And Hotels
+
+![CCPI - Restaurants And Hotels](images/ccpi/ccpi-by-subgroup-restaurants-and-hotels.png)
+
+### CCPI - Miscellaneous Goods And Services
+
+![CCPI - Miscellaneous Goods And Services](images/ccpi/ccpi-by-subgroup-miscellaneous-goods-and-services.png)
 
 ### Inflation by Subgroup
 
