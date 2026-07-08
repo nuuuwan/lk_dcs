@@ -28,6 +28,8 @@ class ReadmeMixin:
         ]
 
     def get_readme_table_lines(self):
+        if not self.data_list:
+            return []
         field_names = list(self.data_list[0].keys())
         lines = [
             "| " + " | ".join(field_names) + " |",
