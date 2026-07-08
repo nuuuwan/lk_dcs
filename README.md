@@ -1,6 +1,14 @@
-# lk_dcs
+# Department of Census and Statistics, Sri Lanka 🇱🇰
 
-## Documents
+![Last Updated](https://img.shields.io/badge/last_updated-2026--07--08-green)
 
-- [Movements of the CCPI](https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf)
-- [Movements of the CCPI Core](https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/Movements_of_CCPI-CCPI_Core_2021.pdf)
+This repo contains public data parsed from [https://www.statistics.gov.lk/](https://www.statistics.gov.lk/).
+
+## Colombo Consumer Price Index (CCPI)
+
+- [Movements of the CCPI](data/ccpi/movements-of-the-ccpi)
+- [Movements of the CCPI Core](data/ccpi/movements-of-the-ccpi-core)
+
+![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
+![MadeWith](https://img.shields.io/badge/made_with-python-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
