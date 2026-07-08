@@ -48,6 +48,7 @@ class CCPISubgroupsParseMixin:
         d_list = []
         year_str = None
         for arr in arr_list:
+            arr = arr[1:]
             if (
                 (arr[0] == "" and year_str is None)
                 or "Base" in arr[0]
