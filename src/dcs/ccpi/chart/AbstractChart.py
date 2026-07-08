@@ -13,8 +13,8 @@ from utils_future import File, Log  # noqa: E402
 
 log = Log("AbstractChart")
 
-FIG_SIZE = (12, 6.75)
-DPI = 100
+FIG_SIZE = (16, 9)
+DPI = 150
 DATE_FORMAT = "%Y-%m-%d"
 DIR_IMAGES = os.path.join("images", "ccpi")
 
@@ -42,13 +42,25 @@ class AbstractChart(ABC):
         return cls([cls.get_source_doc_cls().latest()])
 
     @classmethod
+    def latest_list(cls):
+        return [cls.latest()]
+
+    @classmethod
     def get_chart_id(cls):
         return cls.get_name().replace(" ", "-").lower()
 
     @property
+    def name(self):
+        return self.get_name()
+
+    @property
+    def chart_id(self):
+        return self.get_chart_id()
+
+    @property
     def chart_file(self):
         os.makedirs(DIR_IMAGES, exist_ok=True)
-        return File(os.path.join(DIR_IMAGES, f"{self.get_chart_id()}.png"))
+        return File(os.path.join(DIR_IMAGES, f"{self.chart_id}.png"))
 
     @cached_property
     def data_list(self):
@@ -75,7 +87,7 @@ class AbstractChart(ABC):
     def build(self):
         fig, ax = plt.subplots(figsize=FIG_SIZE)
         self.draw(ax)
-        ax.set_title(self.get_name())
+        ax.set_title(self.name)
         ax.grid(True, linestyle="--", alpha=0.5)
         fig.tight_layout()
         fig.savefig(self.chart_file.path, dpi=DPI)
