@@ -12,12 +12,12 @@ class ReadmeMixin:
         return File(os.path.join(self.dir_data, "README.md"))
 
     @staticmethod
+    # flake8: noqa: CFQ004
     def format_cell(value, name):
         if value is None:
             return "`-`"
         if name == "date_str":
             return f"`{value[:7]}`"
-
         value = float(value)
         if "inflation" in name:
             return f"{value:+.1%}"
