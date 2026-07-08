@@ -12,7 +12,7 @@ class CCPICoreParseMixin:
     @classmethod
     def parse_row(cls, arr, year_str):
         # remove null row
-        arr = arr[:6] + arr[7:]
+        arr = arr[:5] + arr[6:]
 
         if len(arr) != 10:
             raise ValueError("Invalid row format: " + str(arr))

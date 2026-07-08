@@ -1,6 +1,6 @@
 class Parse:
     PRECISION_FLOAT = 1
-    PRECISION_PERCENT = 4
+    PRECISION_PERCENT = 3
 
     @staticmethod
     def float(s):
