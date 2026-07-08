@@ -16,7 +16,7 @@ class ReadmeMixin:
         if value is None:
             return "`-`"
         if name == "date_str":
-            return value[:7]
+            return f"`{value[:7]}`"
 
         value = float(value)
         if "inflation" in name:
