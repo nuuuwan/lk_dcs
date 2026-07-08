@@ -17,10 +17,16 @@ class AbstractSourceDoc(ABC):
     def year_str(self):
         return self.date_str[:4]
 
+    @classmethod
+    def get_dir_cls_data(cls):
+        dir_cls_data = os.path.join("data", "ccpi", cls.get_class_id())
+        os.makedirs(dir_cls_data, exist_ok=True)
+        return dir_cls_data
+
     @property
     def dir_data(self):
         dir_data = os.path.join(
-            "data", "ccpi", self.get_class_id(), self.year_str, self.date_str
+            self.get_dir_cls_data(), self.year_str, self.date_str
         )
         os.makedirs(dir_data, exist_ok=True)
         return dir_data
