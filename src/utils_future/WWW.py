@@ -41,7 +41,6 @@ class WWW:
             self.url,
             headers=self.HEADERS,
             timeout=self.T_TIMEOUT,
-            verify=False,
         )
         response.raise_for_status()
         return response
