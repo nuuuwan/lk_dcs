@@ -4,7 +4,7 @@ from utils_future import Log
 log = Log("pipeline")
 if __name__ == "__main__":
     for i_cls, cls in enumerate(DocFactory.list(), start=1):
-        if i_cls > 2:
+        if i_cls != 3:
             continue
         print("-" * 32)
         log.info(

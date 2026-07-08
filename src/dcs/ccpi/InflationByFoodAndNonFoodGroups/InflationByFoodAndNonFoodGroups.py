@@ -1,10 +1,7 @@
 from dcs.ccpi.AbstractSourceDoc import AbstractSourceDoc
-from dcs.ccpi.InflationByFoodAndNonFoodGroups.ParseMixin import (
-    ParseMixin,
-)
-from dcs.ccpi.InflationByFoodAndNonFoodGroups.ValidateMixin import (
-    ValidateMixin,
-)
+from dcs.ccpi.InflationByFoodAndNonFoodGroups.ParseMixin import ParseMixin
+from dcs.ccpi.InflationByFoodAndNonFoodGroups.ValidateMixin import \
+    ValidateMixin
 from utils_future import Log
 
 log = Log("InflationByFoodAndNonFoodGroups")
