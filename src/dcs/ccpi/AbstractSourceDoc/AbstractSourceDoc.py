@@ -96,4 +96,10 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
                     continue
                 doc = cls(date_str)
                 docs.append(doc)
+        docs.sort(key=lambda doc: doc.date_str)
         return docs
+
+    @classmethod
+    def latest(cls):
+        docs = cls.list()
+        return docs[-1]
