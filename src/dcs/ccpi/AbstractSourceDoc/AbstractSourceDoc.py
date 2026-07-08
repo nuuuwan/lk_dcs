@@ -52,7 +52,7 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
 
     @property
     def label(self):
-        return f"{self.get_name()} ({self.month_str})"
+        return f"{self.get_name()} `{self.month_str}`"
 
     @property
     def original_file(self):
