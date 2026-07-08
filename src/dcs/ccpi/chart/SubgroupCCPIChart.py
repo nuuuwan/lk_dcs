@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from dcs.ccpi.CCPISubgroups.CCPISubgroups import CCPISubgroups
+from dcs.ccpi.CCPISubgroups import CCPISubgroups
 from dcs.ccpi.chart.LineChart import LineChart
 from dcs.ccpi.chart.SubgroupFieldsMixin import SubgroupFieldsMixin
 
