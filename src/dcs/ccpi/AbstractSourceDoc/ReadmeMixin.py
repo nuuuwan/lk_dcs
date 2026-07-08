@@ -33,7 +33,7 @@ class ReadmeMixin:
         update_time_str = TimeFormat.TIME.format(Time.now())
         update_time_str = update_time_str.replace("-", "--").replace(" ", "_")
         return [
-            f"# {self.get_name()}",
+            f"# {self.label}",
             "",
             "![Latest Data](https://img.shields.io/badge/"
             + f"latest_data-{latest_date_str}-green)",
