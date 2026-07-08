@@ -123,6 +123,12 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
         log.debug(f"Read {len(arr_list)} rows from {pdf_file}")
 
         d_list = cls.parse_d_list(arr_list)
+        if not d_list:
+            raise ValueError(
+                f"Parsed 0 rows from {pdf_file} "
+                f"({len(arr_list)} raw table rows). "
+                "The PDF layout or camelot output differs from expected."
+            )
         cls.validate_d_list(d_list)
 
         doc = cls(d_list[-1]["date_str"])
