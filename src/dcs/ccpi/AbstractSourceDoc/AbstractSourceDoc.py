@@ -33,11 +33,6 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
 
     @classmethod
     @abstractmethod
-    def from_pdf_file(cls, pdf_file):
-        pass
-
-    @classmethod
-    @abstractmethod
     def get_url(cls):
         pass
 
@@ -111,3 +106,28 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
     def latest(cls):
         docs = cls.list()
         return docs[-1]
+
+    @classmethod
+    @abstractmethod
+    def parse_d_list(cls, pdf_file):
+        pass
+
+    @classmethod
+    @abstractmethod
+    def validate_d_list(cls, d_list):
+        pass
+
+    @classmethod
+    def from_pdf_file(cls, pdf_file):
+        arr_list = pdf_file.get_tables()[0].df.values.tolist()
+        log.debug(f"Read {len(arr_list)} rows from {pdf_file}")
+
+        d_list = cls.parse_d_list(arr_list)
+        cls.validate_d_list(d_list)
+
+        doc = cls(d_list[-1]["date_str"])
+
+        doc.data_file.write(d_list)
+        log.info(f"Wrote {doc.data_file}")
+
+        return doc

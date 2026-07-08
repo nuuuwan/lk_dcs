@@ -1,65 +1,66 @@
 from utils_future import Parse, TimeFormat
 
-MONTH_FORMATS = [
-    "%b-%y",
-    "%b-%Y",
-    "%B-%Y",
-    "%Y-%b",
-    "%Y-%B",
-    "%b %Y",
-    "%B %Y",
-]
-
 
 class CCPISubgroupsParseMixin:
+    SUBGROUP_LABELS = [
+        "all",
+        "food",
+        "non-food",
+        "alcoholic-beverages-and-tobacco",
+        "clothing-and-footwear",
+        "housing-water-electricity-gas-and-other-fuels",
+        "furnishings-household-equipment-and-routine-household-maintenance",
+        "health",
+        "transport",
+        "communication",
+        "recreation-and-culture",
+        "education",
+        "restaurants-and-hotels",
+        "miscellaneous-goods-and-services",
+    ]
 
-    @staticmethod
-    def parse_month_label(label):
-        for fmt in MONTH_FORMATS:
-            try:
-                return TimeFormat.DATE.format(
-                    TimeFormat(fmt).parse(label.strip())
-                )
-            except (ValueError, AttributeError):
-                continue
-        return None
-
-    @classmethod
-    def parse_col_dates(cls, arr):
-        col_dates = {}
-        for i, label in enumerate(arr):
-            date_str = cls.parse_month_label(label)
-            if date_str is not None:
-                col_dates[i] = date_str
-        return col_dates
-
-    @classmethod
-    def find_header(cls, arr_list):
-        for index, arr in enumerate(arr_list):
-            col_dates = cls.parse_col_dates(arr)
-            if len(col_dates) >= 2:
-                return index, col_dates
-        return None, {}
+    INNER_FIELDS = {
+        "ccpi": "float",
+        "change_month_to_month": "percent",
+        "inflation_year_to_year": "percent",
+        "inflation_12_month_moving_average": "percent",
+    }
 
     @classmethod
-    def parse_row(cls, arr, col_dates):
-        return dict(
-            subgroup=arr[0].strip(),
-            series={
-                date_str: Parse.float(arr[i])
-                for i, date_str in col_dates.items()
-            },
+    def parse_row(cls, arr, year_str):
+        month_part = arr[1].strip()
+        date_str = TimeFormat.DATE.format(
+            TimeFormat("%Y-%B").parse(f"{year_str}-{month_part}")
         )
+        d = {
+            "date_str": date_str,
+        }
+        for i, subgroup in enumerate(cls.SUBGROUP_LABELS):
+            for j, (field, type_label) in enumerate(cls.INNER_FIELDS.items()):
+                value = Parse.custom(
+                    type_label, arr[2 + i * len(cls.INNER_FIELDS) + j]
+                )
+                d[f"{subgroup}_{field}"] = value
+        return d
 
     @classmethod
     def parse_d_list(cls, arr_list):
-        header_index, col_dates = cls.find_header(arr_list)
-        if header_index is None:
-            return []
         d_list = []
-        start = header_index + 1
-        for arr in arr_list[start:]:
-            if arr[0].strip() == "":
+        year_str = None
+        for arr in arr_list:
+            if (
+                (arr[0] == "" and year_str is None)
+                or "Base" in arr[0]
+                or "Year" in arr[0]
+                or "Weight" in arr[0]
+            ):
                 continue
-            d_list.append(cls.parse_row(arr, col_dates))
+
+            if arr[0].strip() != "":
+                year_str = arr[0].strip()
+
+            if arr[1].strip() == "":
+                continue
+
+            d_list.append(cls.parse_row(arr, year_str))
         return d_list

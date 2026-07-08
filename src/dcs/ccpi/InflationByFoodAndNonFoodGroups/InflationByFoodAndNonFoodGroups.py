@@ -8,7 +8,7 @@ log = Log("InflationByFoodAndNonFoodGroups")
 
 
 class InflationByFoodAndNonFoodGroups(
-    AbstractSourceDoc, ParseMixin, ValidateMixin
+    ParseMixin, ValidateMixin, AbstractSourceDoc
 ):
 
     @classmethod
@@ -22,17 +22,3 @@ class InflationByFoodAndNonFoodGroups(
     @classmethod
     def get_name(cls):
         return "Inflation by Food and Non Food Groups"
-
-    @classmethod
-    def from_pdf_file(cls, pdf_file):
-        arr_list = pdf_file.get_tables()[0].df.values.tolist()
-
-        d_list = cls.parse_d_list(arr_list)
-        cls.validate_d_list(d_list)
-
-        doc = cls(d_list[-1]["date_str"])
-
-        doc.data_file.write(d_list)
-        log.info(f"Wrote {doc.data_file}")
-
-        return doc
