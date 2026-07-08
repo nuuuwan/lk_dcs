@@ -2,8 +2,9 @@ import os
 import tempfile
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
+from functools import cached_property
 
-from utils_future import WWW, JSONFile, Log, PDFFile
+from utils_future import WWW, JSONFile, Log, PDFFile, TSVFile
 
 log = Log("AbstractSourceDoc")
 
@@ -26,7 +27,7 @@ class AbstractSourceDoc(ABC):
 
     @classmethod
     @abstractmethod
-    def from_file_path(cls, file_path):
+    def from_pdf_file(cls, pdf_file):
         pass
 
     @classmethod
@@ -47,6 +48,10 @@ class AbstractSourceDoc(ABC):
     def data_file(self):
         return JSONFile(os.path.join(self.dir_data, "data.json"))
 
+    @property
+    def tsv_data_file(self):
+        return TSVFile(os.path.join(self.dir_data, "data.tsv"))
+
     @classmethod
     def get_class_id(cls):
         return cls.get_name().replace(" ", "-").lower()
@@ -66,9 +71,23 @@ class AbstractSourceDoc(ABC):
 
         return temp_file_path
 
+    @cached_property
+    def data_list(self):
+        return self.data_file.read()
+
+    def build_tsv_data(self):
+        self.tsv_data_file.write(self.data_list)
+        log.info(f"Wrote {self.tsv_data_file}")
+
+    def copy_original(self, temp_pdf_file):
+        self.original_file.copy_from(temp_pdf_file)
+        log.info(f"Wrote {self.original_file}")
+
     @classmethod
     def build_latest(cls):
         log.debug(f"Building latest {cls.get_name()}")
-        temp_file_path = cls.download_latest()
-        doc = cls.from_file_path(temp_file_path)
+        temp_pdf_file = PDFFile(cls.download_latest())
+        doc = cls.from_pdf_file(temp_pdf_file)
+        doc.build_tsv_data()
+        doc.copy_original(temp_pdf_file)
         return doc
