@@ -26,6 +26,8 @@ class CCPIParseMixin:
         for arr in arr_list:
             if year_str is None and arr[0] in ("Year", ""):
                 continue
+            if len(arr[0].strip()) not in [0, 4]:
+                continue
             if arr[0] != "":
                 year_str = arr[0]
             d_list.append(cls.parse_row(arr, year_str))

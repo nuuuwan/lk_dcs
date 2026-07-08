@@ -59,6 +59,9 @@ class CCPISubgroupsParseMixin:
             if arr[0].strip() != "":
                 year_str = arr[0].strip()
 
+            if len(arr[0].strip()) not in [0, 4]:
+                continue
+
             if arr[1].strip() == "":
                 continue
 

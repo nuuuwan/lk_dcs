@@ -41,6 +41,8 @@ class ParseMixin:
                 continue
             if arr[0] != "":
                 year_str = arr[0]
+            if len(arr[0].strip()) not in [0, 4]:
+                continue
             if arr[1] == "" or "Weight" in arr[1]:
                 continue
             d_list.append(cls.parse_row(arr, year_str))
