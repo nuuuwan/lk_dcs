@@ -16,7 +16,7 @@ class ReadmeMixin:
         if value is None:
             return "`-`"
         if name == "date_str":
-            return TimeFormat("%Y %b").format(TimeFormat.DATE.parse(value))
+            return value[:7]
 
         value = float(value)
         if "inflation" in name:
