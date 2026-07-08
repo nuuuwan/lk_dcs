@@ -1,4 +1,7 @@
 from dcs.ccpi.CCPI import CCPI
+from dcs.ccpi.InflationByFoodAndNonFoodGroups import (
+    InflationByFoodAndNonFoodGroups,
+)
 
 
 class DocFactory:
@@ -6,4 +9,5 @@ class DocFactory:
     def list():
         return [
             CCPI,
+            InflationByFoodAndNonFoodGroups,
         ]
