@@ -37,7 +37,6 @@ class ParseMixin:
         year_str = None
         d_list = []
         for arr in arr_list:
-            print(len(arr), arr)
             if year_str is None and ("Year" in arr[0] or "Base" in arr[0]):
                 continue
             if arr[0] != "":
