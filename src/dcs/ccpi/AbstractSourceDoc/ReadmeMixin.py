@@ -41,6 +41,8 @@ class ReadmeMixin:
             "![Last Checked](https://img.shields.io/badge/"
             + f"last_checked-{update_date_str}-purple)",
             "",
+            f"Source: <{self.get_url()}>",
+            "",
         ]
 
     def get_lines_for_files(self):
@@ -56,7 +58,7 @@ class ReadmeMixin:
 
     def get_lines_for_latest(self):
         lines = [
-            "## Latest Data",
+            "## Latest Data (as JSON)",
             "",
             "```json",
             json.dumps(
@@ -73,7 +75,7 @@ class ReadmeMixin:
         field_names = list(self.data_list[0].keys())
         field_name_labels = [n.replace("_", " ").title() for n in field_names]
         lines = [
-            "## Data Table",
+            "## All Data",
             "",
             "| " + " | ".join(field_name_labels) + " |",
             "| " + " | ".join(["--:"] * len(field_name_labels)) + " |",
@@ -84,7 +86,7 @@ class ReadmeMixin:
             ]
             lines.append("| " + " | ".join(cells) + " |")
 
-        lines.extend(["", f"Source: <{self.get_url()}>", ""])
+        lines.append("")
         return lines
 
     @staticmethod

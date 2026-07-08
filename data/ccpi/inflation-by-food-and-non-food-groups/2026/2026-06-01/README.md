@@ -3,13 +3,15 @@
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
 ![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08-purple)
 
+Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationFoodAndNonFood.pdf>
+
 ## Files
 
 - [Original PDF](../../../../../data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01/original.pdf)
 - [Data JSON](../../../../../data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01/data.tsv)
 
-## Latest Data
+## Latest Data (as JSON)
 
 ```json
 {
@@ -29,7 +31,7 @@
 }
 ```
 
-## Data Table
+## All Data
 
 | Date Str | All Ccpi | All Ccpi Change Month To Month | All Inflation Year To Year | All Inflation 12 Month Moving Average | Food Ccpi | Food Ccpi Change Month To Month | Food Inflation Year To Year | Food Inflation 12 Month Moving Average | Non Food Ccpi | Non Food Ccpi Change Month To Month | Non Food Inflation Year To Year | Non Food Inflation 12 Month Moving Average |
 | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: |
@@ -87,8 +89,6 @@
 | `2026-04` | 201.6 | +3.0% | +5.4% | +1.6% | 245.1 | +1.7% | +2.8% | +2.7% | 186.2 | +3.6% | +6.8% | +1.0% |
 | `2026-05` | 203.4 | +0.9% | +5.5% | +2.1% | 247.1 | +0.8% | +0.9% | +2.3% | 187.9 | +0.9% | +7.8% | +2.0% |
 | `2026-06` | 207.7 | +2.1% | +6.8% | +2.7% | 258.2 | +4.5% | +3.6% | +2.3% | 189.7 | +1.0% | +8.4% | +2.9% |
-
-Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationFoodAndNonFood.pdf>
 
 ![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
 ![MadeWith](https://img.shields.io/badge/made_with-python-blue)

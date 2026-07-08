@@ -3,13 +3,15 @@
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
 ![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08-purple)
 
+Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf>
+
 ## Files
 
 - [Original PDF](../../../../../data/ccpi/movements-of-the-ccpi/2026/2026-06-01/original.pdf)
 - [Data JSON](../../../../../data/ccpi/movements-of-the-ccpi/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/movements-of-the-ccpi/2026/2026-06-01/data.tsv)
 
-## Latest Data
+## Latest Data (as JSON)
 
 ```json
 {
@@ -21,7 +23,7 @@
 }
 ```
 
-## Data Table
+## All Data
 
 | Date Str | Ccpi | Change Month To Month | Inflation Year To Year | Inflation 12 Month Moving Average |
 | --: | --: | --: | --: | --: |
@@ -79,8 +81,6 @@
 | `2026-04` | 201.6 | +3.0% | +5.4% | +1.6% |
 | `2026-05` | 203.4 | +0.9% | +5.5% | +2.1% |
 | `2026-06` | 207.7 | +2.1% | +6.8% | +2.7% |
-
-Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf>
 
 ![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
 ![MadeWith](https://img.shields.io/badge/made_with-python-blue)

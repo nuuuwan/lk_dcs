@@ -3,13 +3,15 @@
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
 ![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08-purple)
 
+Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationSubGroupwiseChart.pdf>
+
 ## Files
 
 - [Original PDF](../../../../../data/ccpi/ccpi-by-subgroup/2026/2026-06-01/original.pdf)
 - [Data JSON](../../../../../data/ccpi/ccpi-by-subgroup/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/ccpi-by-subgroup/2026/2026-06-01/data.tsv)
 
-## Latest Data
+## Latest Data (as JSON)
 
 ```json
 {
@@ -73,7 +75,7 @@
 }
 ```
 
-## Data Table
+## All Data
 
 | Date Str | All Ccpi | All Change Month To Month | All Inflation Year To Year | All Inflation 12 Month Moving Average | Food Ccpi | Food Change Month To Month | Food Inflation Year To Year | Food Inflation 12 Month Moving Average | Non-Food Ccpi | Non-Food Change Month To Month | Non-Food Inflation Year To Year | Non-Food Inflation 12 Month Moving Average | Alcoholic-Beverages-And-Tobacco Ccpi | Alcoholic-Beverages-And-Tobacco Change Month To Month | Alcoholic-Beverages-And-Tobacco Inflation Year To Year | Alcoholic-Beverages-And-Tobacco Inflation 12 Month Moving Average | Clothing-And-Footwear Ccpi | Clothing-And-Footwear Change Month To Month | Clothing-And-Footwear Inflation Year To Year | Clothing-And-Footwear Inflation 12 Month Moving Average | Housing-Water-Electricity-Gas-And-Other-Fuels Ccpi | Housing-Water-Electricity-Gas-And-Other-Fuels Change Month To Month | Housing-Water-Electricity-Gas-And-Other-Fuels Inflation Year To Year | Housing-Water-Electricity-Gas-And-Other-Fuels Inflation 12 Month Moving Average | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Ccpi | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Change Month To Month | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Inflation Year To Year | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Inflation 12 Month Moving Average | Health Ccpi | Health Change Month To Month | Health Inflation Year To Year | Health Inflation 12 Month Moving Average | Transport Ccpi | Transport Change Month To Month | Transport Inflation Year To Year | Transport Inflation 12 Month Moving Average | Communication Ccpi | Communication Change Month To Month | Communication Inflation Year To Year | Communication Inflation 12 Month Moving Average | Recreation-And-Culture Ccpi | Recreation-And-Culture Change Month To Month | Recreation-And-Culture Inflation Year To Year | Recreation-And-Culture Inflation 12 Month Moving Average | Education Ccpi | Education Change Month To Month | Education Inflation Year To Year | Education Inflation 12 Month Moving Average | Restaurants-And-Hotels Ccpi | Restaurants-And-Hotels Change Month To Month | Restaurants-And-Hotels Inflation Year To Year | Restaurants-And-Hotels Inflation 12 Month Moving Average | Miscellaneous-Goods-And-Services Ccpi | Miscellaneous-Goods-And-Services Change Month To Month | Miscellaneous-Goods-And-Services Inflation Year To Year | Miscellaneous-Goods-And-Services Inflation 12 Month Moving Average |
 | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: |
@@ -131,8 +133,6 @@
 | `2026-04` | 201.6 | +3.0% | +5.4% | +1.6% | 245.1 | +1.7% | +2.8% | +2.7% | 186.2 | +3.6% | +6.8% | +1.0% | 251.4 | +1.3% | +2.0% | +2.2% | 261.0 | +0.1% | +3.5% | +4.0% | 140.1 | +2.3% | +5.4% | -0.6% | 191.5 | +0.2% | +3.0% | +1.0% | 191.4 | +0.3% | +3.9% | +4.5% | 251.7 | +10.0% | +11.6% | -1.0% | 125.3 | +0.0% | +1.0% | +0.7% | 183.0 | -0.1% | +0.7% | +1.0% | 194.1 | +1.4% | +6.5% | +5.3% | 263.9 | +5.3% | +10.5% | +3.6% | 207.4 | +0.0% | +6.0% | +3.1% |
 | `2026-05` | 203.4 | +0.9% | +5.5% | +2.1% | 247.1 | +0.8% | +0.9% | +2.3% | 187.9 | +0.9% | +7.8% | +2.0% | 253.0 | +0.6% | +3.0% | +2.2% | 256.5 | -1.7% | +1.7% | +3.8% | 141.9 | +1.3% | +6.9% | +0.8% | 193.4 | +1.0% | +3.9% | +1.4% | 192.6 | +0.6% | +4.2% | +4.3% | 255.0 | +1.3% | +13.9% | +0.7% | 125.3 | +0.0% | +1.0% | +0.8% | 182.6 | -0.2% | +0.1% | +0.9% | 194.1 | +0.0% | +6.5% | +5.4% | 268.6 | +1.8% | +11.9% | +4.5% | 207.5 | +0.0% | +5.9% | +3.3% |
 | `2026-06` | 207.7 | +2.1% | +6.8% | +2.7% | 258.2 | +4.5% | +3.6% | +2.3% | 189.7 | +1.0% | +8.4% | +2.9% | 250.0 | -1.2% | +1.7% | +2.0% | 256.6 | +0.0% | +1.3% | +3.6% | 142.1 | +0.1% | +6.3% | +2.0% | 194.8 | +0.7% | +4.5% | +1.8% | 192.7 | +0.1% | +4.2% | +4.3% | 265.5 | +4.1% | +18.7% | +2.7% | 125.4 | +0.1% | +0.3% | +0.8% | 180.3 | -1.3% | -1.4% | +0.8% | 194.1 | +0.0% | +6.5% | +5.5% | 269.1 | +0.2% | +10.3% | +5.3% | 207.5 | +0.0% | +5.8% | +3.5% |
-
-Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationSubGroupwiseChart.pdf>
 
 ![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
 ![MadeWith](https://img.shields.io/badge/made_with-python-blue)
