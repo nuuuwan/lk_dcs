@@ -1,6 +1,7 @@
 # Movements of the CCPI
 
-Latest Version **2026-06-01** from <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf>
+![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08_11:14:06-purple)
 
 ## Files
 
@@ -66,3 +67,9 @@ Latest Version **2026-06-01** from <https://www.statistics.gov.lk/Resource/en/In
 | 2026 Apr | 201.6 | +3.0% | +5.4% | +1.6% |
 | 2026 May | 203.4 | +0.9% | +5.5% | +2.1% |
 | 2026 Jun | 207.7 | +2.1% | +6.8% | +2.7% |
+
+Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf>
+
+![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
+![MadeWith](https://img.shields.io/badge/made_with-python-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

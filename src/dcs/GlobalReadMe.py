@@ -10,12 +10,28 @@ class GlobalReadMe:
         return f"- [{doc_cls.get_name()}]({doc_cls.get_dir_cls_data()})"
 
     @staticmethod
+    def get_last_update_date_str():
+        latest_date_str = None
+        for doc_cls in DocFactory.list():
+            latest_doc = doc_cls.latest()
+            date_str = latest_doc.date_str
+            if latest_date_str is None or date_str > latest_date_str:
+                latest_date_str = date_str
+        return latest_date_str
+
+    @staticmethod
     def get_lines_for_header() -> list[str]:
-        time_str = TimeFormat.DATE.format(Time.now())
-        time_str = time_str.replace("-", "--").replace(" ", "_")
+        latest_date_str = TimeFormat("%Y %b").format(
+            TimeFormat.DATE.parse(GlobalReadMe.get_last_update_date_str())
+        )
+        latest_date_str = latest_date_str.replace("-", "--").replace(" ", "_")
+        update_time_str = TimeFormat.TIME.format(Time.now())
+        update_time_str = update_time_str.replace("-", "--").replace(" ", "_")
         return [
-            "![Last Updated](https://img.shields.io/badge/"
-            + f"last_updated-{time_str}-green)",
+            "![Latest Data](https://img.shields.io/badge/"
+            + f"latest_data-{latest_date_str}-green)",
+            "![Last Checked](https://img.shields.io/badge/"
+            + f"last_checked-{update_time_str}-purple)",
             "",
         ]
 
