@@ -11,4 +11,3 @@ if __name__ == "__main__":
         log.debug("-" * 60)
         cls.build_latest()
     GlobalReadMe.build()
-S
