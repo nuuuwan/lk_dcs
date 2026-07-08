@@ -47,6 +47,10 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
         pass
 
     @property
+    def label(self):
+        return f"{self.get_name()} ({self.date_str})"
+
+    @property
     def original_file(self):
         return PDFFile(os.path.join(self.dir_data, "original.pdf"))
 

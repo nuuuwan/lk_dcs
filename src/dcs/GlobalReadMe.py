@@ -8,7 +8,7 @@ class GlobalReadMe:
     @staticmethod
     def build_doc_line(doc_cls):
         latest_doc = doc_cls.latest()
-        return f"- [{doc_cls.get_name()}]({latest_doc.dir_data})"
+        return f"- [{latest_doc.label}]({latest_doc.dir_data})"
 
     @staticmethod
     def get_last_update_date_str():

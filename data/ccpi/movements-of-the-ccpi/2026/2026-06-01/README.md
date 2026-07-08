@@ -1,7 +1,7 @@
 # Movements of the CCPI
 
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
-![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08_11:16:31-purple)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08_11:17:56-purple)
 
 ## Files
 
