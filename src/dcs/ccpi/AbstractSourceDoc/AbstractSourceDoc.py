@@ -3,13 +3,14 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from functools import cached_property
 
+from dcs.ccpi.AbstractSourceDoc.ReadmeMixin import ReadmeMixin
 from utils_future import WWW, JSONFile, Log, PDFFile, TSVFile
 
 log = Log("AbstractSourceDoc")
 
 
 @dataclass
-class AbstractSourceDoc(ABC):
+class AbstractSourceDoc(ABC, ReadmeMixin):
     date_str: str
 
     @property
@@ -46,6 +47,14 @@ class AbstractSourceDoc(ABC):
         pass
 
     @property
+    def month_str(self):
+        return self.date_str[:7]
+
+    @property
+    def label(self):
+        return f"{self.get_name()} `{self.month_str}`"
+
+    @property
     def original_file(self):
         return PDFFile(os.path.join(self.dir_data, "original.pdf"))
 
@@ -79,4 +88,26 @@ class AbstractSourceDoc(ABC):
         doc = cls.from_pdf_file(temp_pdf_file)
         doc.build_tsv_data()
         doc.copy_original(temp_pdf_file)
+        doc.build_readme()
         return doc
+
+    @classmethod
+    def list(cls):
+        docs = []
+        for year_str in sorted(os.listdir(cls.get_dir_cls_data())):
+            dir_year = os.path.join(cls.get_dir_cls_data(), year_str)
+            if not os.path.isdir(dir_year):
+                continue
+            for date_str in sorted(os.listdir(dir_year)):
+                dir_date = os.path.join(dir_year, date_str)
+                if not os.path.isdir(dir_date):
+                    continue
+                doc = cls(date_str)
+                docs.append(doc)
+        docs.sort(key=lambda doc: doc.date_str)
+        return docs
+
+    @classmethod
+    def latest(cls):
+        docs = cls.list()
+        return docs[-1]

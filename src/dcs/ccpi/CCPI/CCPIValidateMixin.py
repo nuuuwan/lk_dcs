@@ -30,7 +30,7 @@ class CCPIValidateMixin:
             actual = d_list[i]["change_month_to_month"]
             if None in (ccpi[i], ccpi[i - 1], actual):
                 continue
-            expected = (ccpi[i] - ccpi[i - 1]) / ccpi[i - 1] * 100
+            expected = (ccpi[i] - ccpi[i - 1]) / ccpi[i - 1]
             cls.check(
                 d_list[i]["date_str"],
                 "change_month_to_month",
@@ -44,7 +44,7 @@ class CCPIValidateMixin:
             actual = d_list[i]["inflation_year_to_year"]
             if None in (ccpi[i], ccpi[i - 12], actual):
                 continue
-            expected = (ccpi[i] - ccpi[i - 12]) / ccpi[i - 12] * 100
+            expected = (ccpi[i] - ccpi[i - 12]) / ccpi[i - 12]
             cls.check(
                 d_list[i]["date_str"],
                 "inflation_year_to_year",
@@ -64,7 +64,7 @@ class CCPIValidateMixin:
             prev, recent = ccpi[a:b], ccpi[b:c]
             if not cls.is_window_valid(actual, recent, prev):
                 continue
-            expected = (sum(recent) / sum(prev) - 1) * 100
+            expected = sum(recent) / sum(prev) - 1
             cls.check(
                 d_list[i]["date_str"],
                 "inflation_12_month_moving_average",
