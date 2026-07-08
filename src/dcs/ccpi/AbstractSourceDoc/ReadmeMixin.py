@@ -19,11 +19,10 @@ class ReadmeMixin:
         if name == "date_str":
             return f"`{value[:7]}`"
         value = float(value)
-        emoji = "🔴" if value > 0 else "🔵"
         if "inflation" in name:
-            return f"{value:+.1%}{emoji}"
+            return f"{value:+.1%}"
         if "change" in name:
-            return f"{value:+.1%}{emoji}"
+            return f"{value:+.1%}"
         return f"{value:.1f}"
 
     def get_lines_for_header(self) -> list[str]:
