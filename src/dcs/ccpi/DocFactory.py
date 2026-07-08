@@ -1,4 +1,5 @@
 from dcs.ccpi.CCPI import CCPI
+from dcs.ccpi.CCPICore import CCPICore
 from dcs.ccpi.CCPISubgroups import CCPISubgroups
 
 
@@ -7,5 +8,6 @@ class DocFactory:
     def list():
         return [
             CCPI,
+            CCPICore,
             CCPISubgroups,
         ]

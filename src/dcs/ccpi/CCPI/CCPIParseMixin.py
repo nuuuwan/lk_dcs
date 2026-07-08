@@ -14,9 +14,9 @@ class CCPIParseMixin:
         return dict(
             date_str=cls.parse_date_str(year_str, arr[1]),
             ccpi=Parse.float(arr[2]),
-            change_month_to_month=Parse.float(arr[3]),
-            inflation_year_to_year=Parse.float(arr[4]),
-            inflation_12_month_moving_average=Parse.float(arr[6]),
+            change_month_to_month=Parse.percent(arr[3]),
+            inflation_year_to_year=Parse.percent(arr[4]),
+            inflation_12_month_moving_average=Parse.percent(arr[6]),
         )
 
     @classmethod
