@@ -18,7 +18,7 @@ class ReadmeMixin:
             return ""
         return str(value)
 
-    def get_readme_header_lines(self):
+    def get_lines_for_header(self):
         return [
             f"# {self.get_name()}",
             "",
@@ -26,7 +26,7 @@ class ReadmeMixin:
             "",
         ]
 
-    def get_readme_table_lines(self):
+    def get_lines_for_table(self):
         if not self.data_list:
             return []
         field_names = list(self.data_list[0].keys())
@@ -39,9 +39,9 @@ class ReadmeMixin:
             lines.append("| " + " | ".join(cells) + " |")
         return lines
 
-    def get_readme_lines(self):
-        return self.get_readme_header_lines() + self.get_readme_table_lines()
+    def get_lines(self):
+        return self.get_lines_for_header() + self.get_lines_for_table()
 
     def build_readme(self):
-        self.readme_file.write_lines(self.get_readme_lines())
+        self.readme_file.write_lines(self.get_lines())
         log.info(f"Wrote {self.readme_file}")
