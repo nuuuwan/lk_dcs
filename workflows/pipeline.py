@@ -1,4 +1,4 @@
-from dcs import DocFactory, GlobalReadMe
+from dcs import ChartFactory, DocFactory, GlobalReadMe
 from utils_future import Log
 
 log = Log("pipeline")
@@ -10,4 +10,5 @@ if __name__ == "__main__":
         )
         log.debug("-" * 60)
         cls.build_latest()
+    ChartFactory.build_all()
     GlobalReadMe.build()
