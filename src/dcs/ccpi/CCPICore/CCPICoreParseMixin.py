@@ -11,12 +11,25 @@ class CCPICoreParseMixin:
 
     @classmethod
     def parse_row(cls, arr, year_str):
+        # remove null row
+        arr = arr[:6] + arr[7:]
+
+        if len(arr) != 10:
+            raise ValueError("Invalid row format: " + str(arr))
+
         return dict(
             date_str=cls.parse_date_str(year_str, arr[1]),
-            ccpi_core=Parse.float(arr[2]),
-            change_month_to_month=Parse.float(arr[3]),
-            inflation_year_to_year=Parse.float(arr[4]),
-            inflation_12_month_moving_average=Parse.float(arr[6]),
+            #
+            ccpi=Parse.float(arr[2]),
+            ccpi_core=Parse.float(arr[3]),
+            #
+            ccpi_change_month_to_month=Parse.percent(arr[4]),
+            ccpi_core_change_month_to_month=Parse.percent(arr[5]),
+            #
+            inflation_ccpi_year_to_year=Parse.percent(arr[6]),
+            inflation_ccpi_core_year_to_year=Parse.percent(arr[7]),
+            inflation_ccpi_12_month_moving_average=Parse.percent(arr[8]),
+            inflation_ccpi_core_12_month_moving_average=Parse.percent(arr[9]),
         )
 
     @classmethod
@@ -24,9 +37,11 @@ class CCPICoreParseMixin:
         year_str = None
         d_list = []
         for arr in arr_list:
-            if year_str is None and arr[0] in ("Year", ""):
+            if year_str is None and ("Year" in arr[0] or arr[0] == ""):
                 continue
             if arr[0] != "":
                 year_str = arr[0]
+            if arr[1] == "":
+                continue
             d_list.append(cls.parse_row(arr, year_str))
         return d_list
