@@ -7,26 +7,18 @@ log = Log("WWW")
 
 class WWW:
 
-    class DEFAULT_PARAMS:
-        HEADERS = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-            + " AppleWebKit/537.36 (KHTML, like Gecko)"
-            + " Chrome/120.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application"
-            + "/xml;q=0.9,image/webp,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.5",
-        }
-        T_TIMEOUT = 120
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+        + " AppleWebKit/537.36 (KHTML, like Gecko)"
+        + " Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application"
+        + "/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+    }
+    T_TIMEOUT = 120
 
-    def __init__(
-        self,
-        url: str,
-        headers=None,
-        t_timeout=None,
-    ):
+    def __init__(self, url: str):
         self.url = url
-        self.headers = headers or self.DEFAULT_PARAMS.HEADERS
-        self.t_timeout = t_timeout or self.DEFAULT_PARAMS.T_TIMEOUT
 
     def __str__(self) -> str:
         return f"🌐{self.url}"
@@ -34,8 +26,8 @@ class WWW:
     def get_response(self):
         response = requests.get(
             self.url,
-            headers=self.headers,
-            timeout=self.t_timeout,
+            headers=self.HEADERS,
+            timeout=self.T_TIMEOUT,
             verify=False,
         )
         response.raise_for_status()
