@@ -3,13 +3,14 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from functools import cached_property
 
+from dcs.ccpi.AbstractSourceDoc.ReadmeMixin import ReadmeMixin
 from utils_future import WWW, JSONFile, Log, PDFFile, TSVFile
 
 log = Log("AbstractSourceDoc")
 
 
 @dataclass
-class AbstractSourceDoc(ABC):
+class AbstractSourceDoc(ABC, ReadmeMixin):
     date_str: str
 
     @property
@@ -79,4 +80,5 @@ class AbstractSourceDoc(ABC):
         doc = cls.from_pdf_file(temp_pdf_file)
         doc.build_tsv_data()
         doc.copy_original(temp_pdf_file)
+        doc.build_readme()
         return doc
