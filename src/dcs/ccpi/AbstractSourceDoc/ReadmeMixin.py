@@ -1,3 +1,4 @@
+import json
 import os
 
 from utils_future import File, Log, Time, TimeFormat
@@ -53,6 +54,21 @@ class ReadmeMixin:
         lines.append("")
         return lines
 
+    def get_lines_for_latest(self):
+        lines = [
+            "## Latest Data",
+            "",
+            "```json",
+            json.dumps(
+                self.data_list[-1],
+                indent=4,
+            ),
+            "```",
+            "",
+        ]
+
+        return lines
+
     def get_lines_for_table(self):
         field_names = list(self.data_list[0].keys())
         field_name_labels = [n.replace("_", " ").title() for n in field_names]
@@ -86,6 +102,7 @@ class ReadmeMixin:
         return (
             self.get_lines_for_header()
             + self.get_lines_for_files()
+            + self.get_lines_for_latest()
             + self.get_lines_for_table()
             + self.get_lines_for_footer()
         )

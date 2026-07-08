@@ -9,6 +9,26 @@
 - [Data JSON](../../../../../data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01/data.tsv)
 
+## Latest Data
+
+```json
+{
+    "date_str": "2026-06-01",
+    "all_ccpi": 207.7,
+    "all_ccpi_change_month_to_month": 0.021,
+    "all_inflation_year_to_year": 0.068,
+    "all_inflation_12_month_moving_average": 0.027,
+    "food_ccpi": 258.2,
+    "food_ccpi_change_month_to_month": 0.045,
+    "food_inflation_year_to_year": 0.036,
+    "food_inflation_12_month_moving_average": 0.023,
+    "non_food_ccpi": 189.7,
+    "non_food_ccpi_change_month_to_month": 0.01,
+    "non_food_inflation_year_to_year": 0.084,
+    "non_food_inflation_12_month_moving_average": 0.029
+}
+```
+
 ## Data Table
 
 | Date Str | All Ccpi | All Ccpi Change Month To Month | All Inflation Year To Year | All Inflation 12 Month Moving Average | Food Ccpi | Food Ccpi Change Month To Month | Food Inflation Year To Year | Food Inflation 12 Month Moving Average | Non Food Ccpi | Non Food Ccpi Change Month To Month | Non Food Inflation Year To Year | Non Food Inflation 12 Month Moving Average |

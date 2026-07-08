@@ -9,6 +9,22 @@
 - [Data JSON](../../../../../data/ccpi/movements-of-the-ccpi-core/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/movements-of-the-ccpi-core/2026/2026-06-01/data.tsv)
 
+## Latest Data
+
+```json
+{
+    "date_str": "2026-06-01",
+    "ccpi": 207.7,
+    "ccpi_core": 187.3,
+    "ccpi_change_month_to_month": 0.021,
+    "ccpi_core_change_month_to_month": 0.006,
+    "inflation_ccpi_year_to_year": 0.068,
+    "inflation_ccpi_core_year_to_year": 0.04,
+    "inflation_ccpi_12_month_moving_average": 0.027,
+    "inflation_ccpi_core_12_month_moving_average": 0.026
+}
+```
+
 ## Data Table
 
 | Date Str | Ccpi | Ccpi Core | Ccpi Change Month To Month | Ccpi Core Change Month To Month | Inflation Ccpi Year To Year | Inflation Ccpi Core Year To Year | Inflation Ccpi 12 Month Moving Average | Inflation Ccpi Core 12 Month Moving Average |

@@ -9,6 +9,18 @@
 - [Data JSON](../../../../../data/ccpi/movements-of-the-ccpi/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/movements-of-the-ccpi/2026/2026-06-01/data.tsv)
 
+## Latest Data
+
+```json
+{
+    "date_str": "2026-06-01",
+    "ccpi": 207.7,
+    "change_month_to_month": 0.021,
+    "inflation_year_to_year": 0.068,
+    "inflation_12_month_moving_average": 0.027
+}
+```
+
 ## Data Table
 
 | Date Str | Ccpi | Change Month To Month | Inflation Year To Year | Inflation 12 Month Moving Average |

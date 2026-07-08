@@ -9,6 +9,70 @@
 - [Data JSON](../../../../../data/ccpi/ccpi-by-subgroup/2026/2026-06-01/data.json)
 - [Data TSV](../../../../../data/ccpi/ccpi-by-subgroup/2026/2026-06-01/data.tsv)
 
+## Latest Data
+
+```json
+{
+    "date_str": "2026-06-01",
+    "all_ccpi": 207.7,
+    "all_change_month_to_month": 0.021,
+    "all_inflation_year_to_year": 0.068,
+    "all_inflation_12_month_moving_average": 0.027,
+    "food_ccpi": 258.2,
+    "food_change_month_to_month": 0.045,
+    "food_inflation_year_to_year": 0.036,
+    "food_inflation_12_month_moving_average": 0.023,
+    "non-food_ccpi": 189.7,
+    "non-food_change_month_to_month": 0.01,
+    "non-food_inflation_year_to_year": 0.084,
+    "non-food_inflation_12_month_moving_average": 0.029,
+    "alcoholic-beverages-and-tobacco_ccpi": 250.0,
+    "alcoholic-beverages-and-tobacco_change_month_to_month": -0.012,
+    "alcoholic-beverages-and-tobacco_inflation_year_to_year": 0.017,
+    "alcoholic-beverages-and-tobacco_inflation_12_month_moving_average": 0.02,
+    "clothing-and-footwear_ccpi": 256.6,
+    "clothing-and-footwear_change_month_to_month": 0.0,
+    "clothing-and-footwear_inflation_year_to_year": 0.013,
+    "clothing-and-footwear_inflation_12_month_moving_average": 0.036,
+    "housing-water-electricity-gas-and-other-fuels_ccpi": 142.1,
+    "housing-water-electricity-gas-and-other-fuels_change_month_to_month": 0.001,
+    "housing-water-electricity-gas-and-other-fuels_inflation_year_to_year": 0.063,
+    "housing-water-electricity-gas-and-other-fuels_inflation_12_month_moving_average": 0.02,
+    "furnishings-household-equipment-and-routine-household-maintenance_ccpi": 194.8,
+    "furnishings-household-equipment-and-routine-household-maintenance_change_month_to_month": 0.007,
+    "furnishings-household-equipment-and-routine-household-maintenance_inflation_year_to_year": 0.045,
+    "furnishings-household-equipment-and-routine-household-maintenance_inflation_12_month_moving_average": 0.018,
+    "health_ccpi": 192.7,
+    "health_change_month_to_month": 0.001,
+    "health_inflation_year_to_year": 0.042,
+    "health_inflation_12_month_moving_average": 0.043,
+    "transport_ccpi": 265.5,
+    "transport_change_month_to_month": 0.041,
+    "transport_inflation_year_to_year": 0.187,
+    "transport_inflation_12_month_moving_average": 0.027,
+    "communication_ccpi": 125.4,
+    "communication_change_month_to_month": 0.001,
+    "communication_inflation_year_to_year": 0.003,
+    "communication_inflation_12_month_moving_average": 0.008,
+    "recreation-and-culture_ccpi": 180.3,
+    "recreation-and-culture_change_month_to_month": -0.013,
+    "recreation-and-culture_inflation_year_to_year": -0.014,
+    "recreation-and-culture_inflation_12_month_moving_average": 0.008,
+    "education_ccpi": 194.1,
+    "education_change_month_to_month": 0.0,
+    "education_inflation_year_to_year": 0.065,
+    "education_inflation_12_month_moving_average": 0.055,
+    "restaurants-and-hotels_ccpi": 269.1,
+    "restaurants-and-hotels_change_month_to_month": 0.002,
+    "restaurants-and-hotels_inflation_year_to_year": 0.103,
+    "restaurants-and-hotels_inflation_12_month_moving_average": 0.053,
+    "miscellaneous-goods-and-services_ccpi": 207.5,
+    "miscellaneous-goods-and-services_change_month_to_month": 0.0,
+    "miscellaneous-goods-and-services_inflation_year_to_year": 0.058,
+    "miscellaneous-goods-and-services_inflation_12_month_moving_average": 0.035
+}
+```
+
 ## Data Table
 
 | Date Str | All Ccpi | All Change Month To Month | All Inflation Year To Year | All Inflation 12 Month Moving Average | Food Ccpi | Food Change Month To Month | Food Inflation Year To Year | Food Inflation 12 Month Moving Average | Non-Food Ccpi | Non-Food Change Month To Month | Non-Food Inflation Year To Year | Non-Food Inflation 12 Month Moving Average | Alcoholic-Beverages-And-Tobacco Ccpi | Alcoholic-Beverages-And-Tobacco Change Month To Month | Alcoholic-Beverages-And-Tobacco Inflation Year To Year | Alcoholic-Beverages-And-Tobacco Inflation 12 Month Moving Average | Clothing-And-Footwear Ccpi | Clothing-And-Footwear Change Month To Month | Clothing-And-Footwear Inflation Year To Year | Clothing-And-Footwear Inflation 12 Month Moving Average | Housing-Water-Electricity-Gas-And-Other-Fuels Ccpi | Housing-Water-Electricity-Gas-And-Other-Fuels Change Month To Month | Housing-Water-Electricity-Gas-And-Other-Fuels Inflation Year To Year | Housing-Water-Electricity-Gas-And-Other-Fuels Inflation 12 Month Moving Average | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Ccpi | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Change Month To Month | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Inflation Year To Year | Furnishings-Household-Equipment-And-Routine-Household-Maintenance Inflation 12 Month Moving Average | Health Ccpi | Health Change Month To Month | Health Inflation Year To Year | Health Inflation 12 Month Moving Average | Transport Ccpi | Transport Change Month To Month | Transport Inflation Year To Year | Transport Inflation 12 Month Moving Average | Communication Ccpi | Communication Change Month To Month | Communication Inflation Year To Year | Communication Inflation 12 Month Moving Average | Recreation-And-Culture Ccpi | Recreation-And-Culture Change Month To Month | Recreation-And-Culture Inflation Year To Year | Recreation-And-Culture Inflation 12 Month Moving Average | Education Ccpi | Education Change Month To Month | Education Inflation Year To Year | Education Inflation 12 Month Moving Average | Restaurants-And-Hotels Ccpi | Restaurants-And-Hotels Change Month To Month | Restaurants-And-Hotels Inflation Year To Year | Restaurants-And-Hotels Inflation 12 Month Moving Average | Miscellaneous-Goods-And-Services Ccpi | Miscellaneous-Goods-And-Services Change Month To Month | Miscellaneous-Goods-And-Services Inflation Year To Year | Miscellaneous-Goods-And-Services Inflation 12 Month Moving Average |
