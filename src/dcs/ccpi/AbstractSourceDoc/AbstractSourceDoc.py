@@ -82,3 +82,18 @@ class AbstractSourceDoc(ABC, ReadmeMixin):
         doc.copy_original(temp_pdf_file)
         doc.build_readme()
         return doc
+
+    @classmethod
+    def list(cls):
+        docs = []
+        for year_str in sorted(os.listdir(cls.get_dir_cls_data())):
+            dir_year = os.path.join(cls.get_dir_cls_data(), year_str)
+            if not os.path.isdir(dir_year):
+                continue
+            for date_str in sorted(os.listdir(dir_year)):
+                dir_date = os.path.join(dir_year, date_str)
+                if not os.path.isdir(dir_date):
+                    continue
+                doc = cls(date_str)
+                docs.append(doc)
+        return docs
