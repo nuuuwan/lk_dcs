@@ -7,7 +7,8 @@ log = Log("GlobalReadMe")
 class GlobalReadMe:
     @staticmethod
     def build_doc_line(doc_cls):
-        return f"- [{doc_cls.get_name()}]({doc_cls.get_dir_cls_data()})"
+        latest_doc = doc_cls.latest()
+        return f"- [{doc_cls.get_name()}]({latest_doc.dir_data})"
 
     @staticmethod
     def get_last_update_date_str():
