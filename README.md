@@ -1,7 +1,7 @@
 # Department of Census and Statistics, Sri Lanka 🇱🇰
 
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
-![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08_11:22:11-purple)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--07--08_11:23:39-purple)
 
 This repo contains public data parsed from [https://www.statistics.gov.lk/](https://www.statistics.gov.lk/).
 
