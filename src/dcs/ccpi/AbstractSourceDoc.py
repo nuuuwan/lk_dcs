@@ -1,5 +1,4 @@
 import os
-import tempfile
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from functools import cached_property
@@ -62,21 +61,6 @@ class AbstractSourceDoc(ABC):
     def get_class_id(cls):
         return cls.get_name().replace(" ", "-").lower()
 
-    @classmethod
-    def download_latest(cls, force=False):
-        temp_dir = os.path.join(
-            tempfile.gettempdir(), "dcs", cls.get_class_id()
-        )
-        os.makedirs(temp_dir, exist_ok=True)
-        temp_file_path = os.path.join(temp_dir, f"{cls.get_class_id()}.pdf")
-
-        if os.path.exists(temp_file_path) and not force:
-            return temp_file_path
-
-        WWW(cls.get_url()).download_binary(temp_file_path)
-
-        return temp_file_path
-
     @cached_property
     def data_list(self):
         return self.data_file.read()
@@ -91,8 +75,7 @@ class AbstractSourceDoc(ABC):
 
     @classmethod
     def build_latest(cls):
-        log.debug(f"Building latest {cls.get_name()}")
-        temp_pdf_file = PDFFile(cls.download_latest())
+        temp_pdf_file = PDFFile(WWW(cls.get_url()).download_binary().path)
         doc = cls.from_pdf_file(temp_pdf_file)
         doc.build_tsv_data()
         doc.copy_original(temp_pdf_file)
