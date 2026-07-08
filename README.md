@@ -12,6 +12,32 @@ This repo contains public data parsed from [https://www.statistics.gov.lk/](http
 - [CCPI by subgroup `2026-06`](data/ccpi/ccpi-by-subgroup/2026/2026-06-01)
 - [Inflation by Food and Non Food Groups `2026-06`](data/ccpi/inflation-by-food-and-non-food-groups/2026/2026-06-01)
 
+## Charts
+
+### CCPI
+
+![CCPI](images/ccpi/ccpi.png)
+
+### CCPI Inflation
+
+![CCPI Inflation](images/ccpi/ccpi-inflation.png)
+
+### CCPI by Food and Non Food
+
+![CCPI by Food and Non Food](images/ccpi/ccpi-by-food-and-non-food.png)
+
+### Inflation by Food and Non Food
+
+![Inflation by Food and Non Food](images/ccpi/inflation-by-food-and-non-food.png)
+
+### CCPI by Subgroup
+
+![CCPI by Subgroup](images/ccpi/ccpi-by-subgroup.png)
+
+### Inflation by Subgroup
+
+![Inflation by Subgroup](images/ccpi/inflation-by-subgroup.png)
+
 ![Maintainer](https://img.shields.io/badge/maintainer-nuuuwan-red)
 ![MadeWith](https://img.shields.io/badge/made_with-python-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

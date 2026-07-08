@@ -1,3 +1,4 @@
+from dcs.ccpi.chart.ChartFactory import ChartFactory
 from dcs.ccpi.DocFactory import DocFactory
 from utils_future import File, Log, Time, TimeFormat
 
@@ -76,6 +77,7 @@ class GlobalReadMe:
         lines.extend(GlobalReadMe.get_lines_for_header())
         lines.extend(GlobalReadMe.get_lines_for_introduction())
         lines.extend(GlobalReadMe.get_lines_for_ccpi())
+        lines.extend(ChartFactory.get_readme_lines())
         lines.extend(GlobalReadMe.get_lines_for_footer())
         return lines
 
