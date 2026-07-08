@@ -1,0 +1,3 @@
+from .InflationByFoodAndNonFoodGroups import (
+    InflationByFoodAndNonFoodGroups,
+)
