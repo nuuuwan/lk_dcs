@@ -37,7 +37,7 @@
   {
     "date_str": "2022-06-01",
     "ccpi": 171.7,
-    "change_month_to_month": 0.11800000000000001,
+    "change_month_to_month": 0.118,
     "inflation_year_to_year": null,
     "inflation_12_month_moving_average": null
   },
@@ -51,14 +51,14 @@
   {
     "date_str": "2022-08-01",
     "ccpi": 182.8,
-    "change_month_to_month": 0.022000000000000002,
+    "change_month_to_month": 0.022,
     "inflation_year_to_year": null,
     "inflation_12_month_moving_average": null
   },
   {
     "date_str": "2022-09-01",
     "ccpi": 189.3,
-    "change_month_to_month": 0.036000000000000004,
+    "change_month_to_month": 0.036,
     "inflation_year_to_year": null,
     "inflation_12_month_moving_average": null
   },
@@ -72,7 +72,7 @@
   {
     "date_str": "2022-11-01",
     "ccpi": 187.1,
-    "change_month_to_month": -0.006999999999999999,
+    "change_month_to_month": -0.007,
     "inflation_year_to_year": null,
     "inflation_12_month_moving_average": null
   },
@@ -100,14 +100,14 @@
   {
     "date_str": "2023-03-01",
     "ccpi": 195.0,
-    "change_month_to_month": 0.028999999999999998,
+    "change_month_to_month": 0.029,
     "inflation_year_to_year": 0.503,
     "inflation_12_month_moving_average": null
   },
   {
     "date_str": "2023-04-01",
     "ccpi": 192.3,
-    "change_month_to_month": -0.013999999999999999,
+    "change_month_to_month": -0.014,
     "inflation_year_to_year": 0.353,
     "inflation_12_month_moving_average": null
   },
@@ -128,7 +128,7 @@
   {
     "date_str": "2023-07-01",
     "ccpi": 190.2,
-    "change_month_to_month": -0.011000000000000001,
+    "change_month_to_month": -0.011,
     "inflation_year_to_year": 0.063,
     "inflation_12_month_moving_average": null
   },
@@ -142,8 +142,8 @@
   {
     "date_str": "2023-09-01",
     "ccpi": 191.8,
-    "change_month_to_month": 0.009000000000000001,
-    "inflation_year_to_year": 0.013000000000000001,
+    "change_month_to_month": 0.009,
+    "inflation_year_to_year": 0.013,
     "inflation_12_month_moving_average": null
   },
   {
@@ -163,14 +163,14 @@
   {
     "date_str": "2023-12-01",
     "ccpi": 195.1,
-    "change_month_to_month": 0.009000000000000001,
+    "change_month_to_month": 0.009,
     "inflation_year_to_year": 0.04,
     "inflation_12_month_moving_average": 0.174
   },
   {
     "date_str": "2024-01-01",
     "ccpi": 200.7,
-    "change_month_to_month": 0.028999999999999998,
+    "change_month_to_month": 0.029,
     "inflation_year_to_year": 0.064,
     "inflation_12_month_moving_average": 0.142
   },
@@ -178,14 +178,14 @@
     "date_str": "2024-02-01",
     "ccpi": 200.6,
     "change_month_to_month": 0.0,
-    "inflation_year_to_year": 0.059000000000000004,
+    "inflation_year_to_year": 0.059,
     "inflation_12_month_moving_average": 0.113
   },
   {
     "date_str": "2024-03-01",
     "ccpi": 196.7,
     "change_month_to_month": -0.019,
-    "inflation_year_to_year": 0.009000000000000001,
+    "inflation_year_to_year": 0.009,
     "inflation_12_month_moving_average": 0.08
   },
   {
@@ -199,7 +199,7 @@
     "date_str": "2024-05-01",
     "ccpi": 194.1,
     "change_month_to_month": -0.006,
-    "inflation_year_to_year": 0.009000000000000001,
+    "inflation_year_to_year": 0.009,
     "inflation_12_month_moving_average": 0.039
   },
   {
@@ -214,12 +214,12 @@
     "ccpi": 194.7,
     "change_month_to_month": -0.005,
     "inflation_year_to_year": 0.024,
-    "inflation_12_month_moving_average": 0.027999999999999997
+    "inflation_12_month_moving_average": 0.028
   },
   {
     "date_str": "2024-08-01",
     "ccpi": 191.1,
-    "change_month_to_month": -0.018000000000000002,
+    "change_month_to_month": -0.018,
     "inflation_year_to_year": 0.005,
     "inflation_12_month_moving_average": 0.025
   },
@@ -235,7 +235,7 @@
     "ccpi": 189.9,
     "change_month_to_month": -0.005,
     "inflation_year_to_year": -0.008,
-    "inflation_12_month_moving_average": 0.022000000000000002
+    "inflation_12_month_moving_average": 0.022
   },
   {
     "date_str": "2024-11-01",
@@ -269,7 +269,7 @@
     "date_str": "2025-03-01",
     "ccpi": 191.6,
     "change_month_to_month": -0.003,
-    "inflation_year_to_year": -0.026000000000000002,
+    "inflation_year_to_year": -0.026,
     "inflation_12_month_moving_average": -0.008
   },
   {
@@ -277,21 +277,21 @@
     "ccpi": 191.2,
     "change_month_to_month": -0.002,
     "inflation_year_to_year": -0.02,
-    "inflation_12_month_moving_average": -0.011000000000000001
+    "inflation_12_month_moving_average": -0.011
   },
   {
     "date_str": "2025-05-01",
     "ccpi": 192.8,
     "change_month_to_month": 0.008,
-    "inflation_year_to_year": -0.006999999999999999,
+    "inflation_year_to_year": -0.007,
     "inflation_12_month_moving_average": -0.012
   },
   {
     "date_str": "2025-06-01",
     "ccpi": 194.5,
-    "change_month_to_month": 0.009000000000000001,
+    "change_month_to_month": 0.009,
     "inflation_year_to_year": -0.006,
-    "inflation_12_month_moving_average": -0.013999999999999999
+    "inflation_12_month_moving_average": -0.014
   },
   {
     "date_str": "2025-07-01",
@@ -312,7 +312,7 @@
     "ccpi": 193.7,
     "change_month_to_month": 0.002,
     "inflation_year_to_year": 0.015,
-    "inflation_12_month_moving_average": -0.013999999999999999
+    "inflation_12_month_moving_average": -0.014
   },
   {
     "date_str": "2025-10-01",
@@ -345,7 +345,7 @@
   {
     "date_str": "2026-02-01",
     "ccpi": 195.3,
-    "change_month_to_month": -0.009000000000000001,
+    "change_month_to_month": -0.009,
     "inflation_year_to_year": 0.016,
     "inflation_12_month_moving_average": 0.005
   },
@@ -353,20 +353,20 @@
     "date_str": "2026-03-01",
     "ccpi": 195.8,
     "change_month_to_month": 0.003,
-    "inflation_year_to_year": 0.022000000000000002,
-    "inflation_12_month_moving_average": 0.009000000000000001
+    "inflation_year_to_year": 0.022,
+    "inflation_12_month_moving_average": 0.009
   },
   {
     "date_str": "2026-04-01",
     "ccpi": 201.6,
     "change_month_to_month": 0.03,
-    "inflation_year_to_year": 0.054000000000000006,
+    "inflation_year_to_year": 0.054,
     "inflation_12_month_moving_average": 0.016
   },
   {
     "date_str": "2026-05-01",
     "ccpi": 203.4,
-    "change_month_to_month": 0.009000000000000001,
+    "change_month_to_month": 0.009,
     "inflation_year_to_year": 0.055,
     "inflation_12_month_moving_average": 0.021
   },
@@ -375,6 +375,6 @@
     "ccpi": 207.7,
     "change_month_to_month": 0.021,
     "inflation_year_to_year": 0.068,
-    "inflation_12_month_moving_average": 0.027000000000000003
+    "inflation_12_month_moving_average": 0.027
   }
 ]
