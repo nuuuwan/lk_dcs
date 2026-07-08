@@ -1,7 +1,6 @@
-from dcs.ccpi.InflationByFoodAndNonFoodGroups import (
-    InflationByFoodAndNonFoodGroups,
-)
 from dcs.ccpi.chart.LineChart import LineChart
+from dcs.ccpi.InflationByFoodAndNonFoodGroups import \
+    InflationByFoodAndNonFoodGroups
 
 
 class FoodNonFoodInflationChart(LineChart):
