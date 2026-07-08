@@ -22,8 +22,7 @@ class ReadmeMixin:
         return [
             f"# {self.get_name()}",
             "",
-            f"- Date: {self.date_str}",
-            f"- Source: {self.get_url()}",
+            f"Latest Version **{self.date_str}** from <{self.get_url()}>",
             "",
         ]
 
