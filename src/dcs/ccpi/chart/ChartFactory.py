@@ -1,3 +1,4 @@
+from dcs.ccpi.chart.AbstractChart import DIR_IMAGES
 from dcs.ccpi.chart.CCPIChart import CCPIChart
 from dcs.ccpi.chart.CCPIInflationChart import CCPIInflationChart
 from dcs.ccpi.chart.FoodNonFoodCCPIChart import FoodNonFoodCCPIChart
@@ -7,8 +8,6 @@ from dcs.ccpi.chart.SubgroupInflationChart import SubgroupInflationChart
 from utils_future import Log
 
 log = Log("ChartFactory")
-
-DIR_IMAGES = "images/ccpi"
 
 
 class ChartFactory:

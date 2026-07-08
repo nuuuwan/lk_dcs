@@ -16,6 +16,7 @@ log = Log("AbstractChart")
 FIG_SIZE = (12, 6.75)
 DPI = 100
 DATE_FORMAT = "%Y-%m-%d"
+DIR_IMAGES = os.path.join("images", "ccpi")
 
 
 @dataclass
@@ -46,9 +47,8 @@ class AbstractChart(ABC):
 
     @property
     def chart_file(self):
-        dir_charts = os.path.join("images", "ccpi")
-        os.makedirs(dir_charts, exist_ok=True)
-        return File(os.path.join(dir_charts, f"{self.get_chart_id()}.png"))
+        os.makedirs(DIR_IMAGES, exist_ok=True)
+        return File(os.path.join(DIR_IMAGES, f"{self.get_chart_id()}.png"))
 
     @cached_property
     def data_list(self):
