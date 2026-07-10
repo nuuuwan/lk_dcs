@@ -1,7 +1,7 @@
 # CCPI by subgroup `2026-06`
 
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
-![Last Checked](https://img.shields.io/badge/last_checked-2026--07--09-purple)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--07--10-purple)
 
 Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationSubGroupwiseChart.pdf>
 
