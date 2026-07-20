@@ -1,7 +1,7 @@
 # Movements of the CCPI `2026-06`
 
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jun-green)
-![Last Checked](https://img.shields.io/badge/last_checked-2026--07--19-purple)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--07--20-purple)
 
 Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/MOVEMENTS_of_CCPI_with_MV_Base2021.pdf>
 
