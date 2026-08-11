@@ -1,4 +1,4 @@
-from utils_future import Parse, TimeFormat, Log
+from utils_future import Log, Parse, TimeFormat
 
 log = Log("CCPICoreParseMixin")
 

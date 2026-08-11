@@ -1,0 +1,387 @@
+[
+  {
+    "date_str": "2022-01-01",
+    "ccpi": 124.3,
+    "change_month_to_month": null,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-02-01",
+    "ccpi": 125.8,
+    "change_month_to_month": 0.012,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-03-01",
+    "ccpi": 129.7,
+    "change_month_to_month": 0.031,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-04-01",
+    "ccpi": 142.1,
+    "change_month_to_month": 0.096,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-05-01",
+    "ccpi": 153.6,
+    "change_month_to_month": 0.081,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-06-01",
+    "ccpi": 171.7,
+    "change_month_to_month": 0.118,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-07-01",
+    "ccpi": 178.9,
+    "change_month_to_month": 0.042,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-08-01",
+    "ccpi": 182.8,
+    "change_month_to_month": 0.022,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-09-01",
+    "ccpi": 189.3,
+    "change_month_to_month": 0.036,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-10-01",
+    "ccpi": 188.5,
+    "change_month_to_month": -0.004,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-11-01",
+    "ccpi": 187.1,
+    "change_month_to_month": -0.007,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2022-12-01",
+    "ccpi": 187.6,
+    "change_month_to_month": 0.003,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-01-01",
+    "ccpi": 188.6,
+    "change_month_to_month": 0.005,
+    "inflation_year_to_year": null,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-02-01",
+    "ccpi": 189.5,
+    "change_month_to_month": 0.005,
+    "inflation_year_to_year": 0.506,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-03-01",
+    "ccpi": 195.0,
+    "change_month_to_month": 0.029,
+    "inflation_year_to_year": 0.503,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-04-01",
+    "ccpi": 192.3,
+    "change_month_to_month": -0.014,
+    "inflation_year_to_year": 0.353,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-05-01",
+    "ccpi": 192.3,
+    "change_month_to_month": 0.0,
+    "inflation_year_to_year": 0.252,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-06-01",
+    "ccpi": 192.3,
+    "change_month_to_month": 0.0,
+    "inflation_year_to_year": 0.12,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-07-01",
+    "ccpi": 190.2,
+    "change_month_to_month": -0.011,
+    "inflation_year_to_year": 0.063,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-08-01",
+    "ccpi": 190.1,
+    "change_month_to_month": -0.001,
+    "inflation_year_to_year": 0.04,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-09-01",
+    "ccpi": 191.8,
+    "change_month_to_month": 0.009,
+    "inflation_year_to_year": 0.013,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-10-01",
+    "ccpi": 191.4,
+    "change_month_to_month": -0.002,
+    "inflation_year_to_year": 0.015,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-11-01",
+    "ccpi": 193.4,
+    "change_month_to_month": 0.01,
+    "inflation_year_to_year": 0.034,
+    "inflation_12_month_moving_average": null
+  },
+  {
+    "date_str": "2023-12-01",
+    "ccpi": 195.1,
+    "change_month_to_month": 0.009,
+    "inflation_year_to_year": 0.04,
+    "inflation_12_month_moving_average": 0.174
+  },
+  {
+    "date_str": "2024-01-01",
+    "ccpi": 200.7,
+    "change_month_to_month": 0.029,
+    "inflation_year_to_year": 0.064,
+    "inflation_12_month_moving_average": 0.142
+  },
+  {
+    "date_str": "2024-02-01",
+    "ccpi": 200.6,
+    "change_month_to_month": 0.0,
+    "inflation_year_to_year": 0.059,
+    "inflation_12_month_moving_average": 0.113
+  },
+  {
+    "date_str": "2024-03-01",
+    "ccpi": 196.7,
+    "change_month_to_month": -0.019,
+    "inflation_year_to_year": 0.009,
+    "inflation_12_month_moving_average": 0.08
+  },
+  {
+    "date_str": "2024-04-01",
+    "ccpi": 195.2,
+    "change_month_to_month": -0.008,
+    "inflation_year_to_year": 0.015,
+    "inflation_12_month_moving_average": 0.057
+  },
+  {
+    "date_str": "2024-05-01",
+    "ccpi": 194.1,
+    "change_month_to_month": -0.006,
+    "inflation_year_to_year": 0.009,
+    "inflation_12_month_moving_average": 0.039
+  },
+  {
+    "date_str": "2024-06-01",
+    "ccpi": 195.6,
+    "change_month_to_month": 0.008,
+    "inflation_year_to_year": 0.017,
+    "inflation_12_month_moving_average": 0.031
+  },
+  {
+    "date_str": "2024-07-01",
+    "ccpi": 194.7,
+    "change_month_to_month": -0.005,
+    "inflation_year_to_year": 0.024,
+    "inflation_12_month_moving_average": 0.028
+  },
+  {
+    "date_str": "2024-08-01",
+    "ccpi": 191.1,
+    "change_month_to_month": -0.018,
+    "inflation_year_to_year": 0.005,
+    "inflation_12_month_moving_average": 0.025
+  },
+  {
+    "date_str": "2024-09-01",
+    "ccpi": 190.9,
+    "change_month_to_month": -0.001,
+    "inflation_year_to_year": -0.005,
+    "inflation_12_month_moving_average": 0.024
+  },
+  {
+    "date_str": "2024-10-01",
+    "ccpi": 189.9,
+    "change_month_to_month": -0.005,
+    "inflation_year_to_year": -0.008,
+    "inflation_12_month_moving_average": 0.022
+  },
+  {
+    "date_str": "2024-11-01",
+    "ccpi": 189.4,
+    "change_month_to_month": -0.003,
+    "inflation_year_to_year": -0.021,
+    "inflation_12_month_moving_average": 0.017
+  },
+  {
+    "date_str": "2024-12-01",
+    "ccpi": 191.7,
+    "change_month_to_month": 0.012,
+    "inflation_year_to_year": -0.017,
+    "inflation_12_month_moving_average": 0.012
+  },
+  {
+    "date_str": "2025-01-01",
+    "ccpi": 192.6,
+    "change_month_to_month": 0.005,
+    "inflation_year_to_year": -0.04,
+    "inflation_12_month_moving_average": 0.004
+  },
+  {
+    "date_str": "2025-02-01",
+    "ccpi": 192.2,
+    "change_month_to_month": -0.002,
+    "inflation_year_to_year": -0.042,
+    "inflation_12_month_moving_average": -0.005
+  },
+  {
+    "date_str": "2025-03-01",
+    "ccpi": 191.6,
+    "change_month_to_month": -0.003,
+    "inflation_year_to_year": -0.026,
+    "inflation_12_month_moving_average": -0.008
+  },
+  {
+    "date_str": "2025-04-01",
+    "ccpi": 191.2,
+    "change_month_to_month": -0.002,
+    "inflation_year_to_year": -0.02,
+    "inflation_12_month_moving_average": -0.011
+  },
+  {
+    "date_str": "2025-05-01",
+    "ccpi": 192.8,
+    "change_month_to_month": 0.008,
+    "inflation_year_to_year": -0.007,
+    "inflation_12_month_moving_average": -0.012
+  },
+  {
+    "date_str": "2025-06-01",
+    "ccpi": 194.5,
+    "change_month_to_month": 0.009,
+    "inflation_year_to_year": -0.006,
+    "inflation_12_month_moving_average": -0.014
+  },
+  {
+    "date_str": "2025-07-01",
+    "ccpi": 194.1,
+    "change_month_to_month": -0.002,
+    "inflation_year_to_year": -0.003,
+    "inflation_12_month_moving_average": -0.016
+  },
+  {
+    "date_str": "2025-08-01",
+    "ccpi": 193.3,
+    "change_month_to_month": -0.004,
+    "inflation_year_to_year": 0.012,
+    "inflation_12_month_moving_average": -0.015
+  },
+  {
+    "date_str": "2025-09-01",
+    "ccpi": 193.7,
+    "change_month_to_month": 0.002,
+    "inflation_year_to_year": 0.015,
+    "inflation_12_month_moving_average": -0.014
+  },
+  {
+    "date_str": "2025-10-01",
+    "ccpi": 193.8,
+    "change_month_to_month": 0.001,
+    "inflation_year_to_year": 0.021,
+    "inflation_12_month_moving_average": -0.012
+  },
+  {
+    "date_str": "2025-11-01",
+    "ccpi": 193.4,
+    "change_month_to_month": -0.002,
+    "inflation_year_to_year": 0.021,
+    "inflation_12_month_moving_average": -0.008
+  },
+  {
+    "date_str": "2025-12-01",
+    "ccpi": 195.8,
+    "change_month_to_month": 0.012,
+    "inflation_year_to_year": 0.021,
+    "inflation_12_month_moving_average": -0.005
+  },
+  {
+    "date_str": "2026-01-01",
+    "ccpi": 197.0,
+    "change_month_to_month": 0.006,
+    "inflation_year_to_year": 0.023,
+    "inflation_12_month_moving_average": 0.0
+  },
+  {
+    "date_str": "2026-02-01",
+    "ccpi": 195.3,
+    "change_month_to_month": -0.009,
+    "inflation_year_to_year": 0.016,
+    "inflation_12_month_moving_average": 0.005
+  },
+  {
+    "date_str": "2026-03-01",
+    "ccpi": 195.8,
+    "change_month_to_month": 0.003,
+    "inflation_year_to_year": 0.022,
+    "inflation_12_month_moving_average": 0.009
+  },
+  {
+    "date_str": "2026-04-01",
+    "ccpi": 201.6,
+    "change_month_to_month": 0.03,
+    "inflation_year_to_year": 0.054,
+    "inflation_12_month_moving_average": 0.016
+  },
+  {
+    "date_str": "2026-05-01",
+    "ccpi": 203.4,
+    "change_month_to_month": 0.009,
+    "inflation_year_to_year": 0.055,
+    "inflation_12_month_moving_average": 0.021
+  },
+  {
+    "date_str": "2026-06-01",
+    "ccpi": 207.7,
+    "change_month_to_month": 0.021,
+    "inflation_year_to_year": 0.068,
+    "inflation_12_month_moving_average": 0.027
+  },
+  {
+    "date_str": "2026-07-01",
+    "ccpi": 208.2,
+    "change_month_to_month": 0.002,
+    "inflation_year_to_year": 0.073,
+    "inflation_12_month_moving_average": 0.033
+  }
+]
