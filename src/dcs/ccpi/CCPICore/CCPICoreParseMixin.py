@@ -1,4 +1,6 @@
-from utils_future import Parse, TimeFormat
+from utils_future import Parse, TimeFormat, Log
+
+log = Log("CCPICoreParseMixin")
 
 
 class CCPICoreParseMixin:
@@ -12,9 +14,11 @@ class CCPICoreParseMixin:
     @classmethod
     def parse_row(cls, arr, year_str):
         # remove null row
-        arr = arr[:5] + arr[6:]
+        if len(arr) == 9:
+            arr = arr[:5] + arr[6:]
 
         if len(arr) != 10:
+            log.error(f'{arr=}')
             raise ValueError("Invalid row format: " + str(arr))
 
         return dict(
