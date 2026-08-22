@@ -1,7 +1,7 @@
 # Inflation by Food and Non Food Groups `2026-07`
 
 ![Latest Data](https://img.shields.io/badge/latest_data-2026_Jul-green)
-![Last Checked](https://img.shields.io/badge/last_checked-2026--08--21-purple)
+![Last Checked](https://img.shields.io/badge/last_checked-2026--08--22-purple)
 
 Source: <https://www.statistics.gov.lk/Resource/en/InflationAndPrices/CCPI/CCPI_2021_InflationFoodAndNonFood.pdf>
 
