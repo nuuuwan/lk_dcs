@@ -32,18 +32,27 @@ class ParseMixin:
             non_food_inflation_12_month_moving_average=Parse.percent(arr[13]),
         )
 
+    @staticmethod
+    def _is_valid_year_candidate(year_candidate):
+        return not year_candidate or (
+            len(year_candidate) == 4 and year_candidate.isdigit()
+        )
+
+    @staticmethod
+    def _should_skip_row(arr):
+        return arr[1] == "" or "Weight" in arr[1]
+
     @classmethod
     def parse_d_list(cls, arr_list):
         year_str = None
         d_list = []
         for arr in arr_list:
-            if year_str is None and ("Year" in arr[0] or "Base" in arr[0]):
+            year_candidate = arr[0].strip()
+            if not cls._is_valid_year_candidate(year_candidate):
                 continue
-            if arr[0] != "":
-                year_str = arr[0]
-            if len(arr[0].strip()) not in [0, 4]:
-                continue
-            if arr[1] == "" or "Weight" in arr[1]:
+            if year_candidate:
+                year_str = year_candidate
+            if cls._should_skip_row(arr):
                 continue
             d_list.append(cls.parse_row(arr, year_str))
         return d_list

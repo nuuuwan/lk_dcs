@@ -13,8 +13,9 @@ class CCPICoreParseMixin:
 
     @classmethod
     def parse_row(cls, arr, year_str):
-        # remove null row
         if len(arr) == 9:
+            arr = arr[:5] + arr[6:]
+        elif len(arr) == 11 and arr[5] == "":
             arr = arr[:5] + arr[6:]
 
         if len(arr) != 10:
@@ -36,18 +37,27 @@ class CCPICoreParseMixin:
             inflation_ccpi_core_12_month_moving_average=Parse.percent(arr[9]),
         )
 
+    @staticmethod
+    def _is_valid_year_candidate(year_candidate):
+        return not year_candidate or (
+            len(year_candidate) == 4 and year_candidate.isdigit()
+        )
+
+    @staticmethod
+    def _should_skip_row(arr, year_str):
+        return year_str is None or arr[1] == ""
+
     @classmethod
     def parse_d_list(cls, arr_list):
         year_str = None
         d_list = []
         for arr in arr_list:
-            if year_str is None and ("Year" in arr[0] or arr[0] == ""):
+            year_candidate = arr[0].strip()
+            if not cls._is_valid_year_candidate(year_candidate):
                 continue
-            if arr[0] != "":
-                year_str = arr[0]
-            if len(arr[0].strip()) not in [0, 4]:
-                continue
-            if arr[1] == "":
+            if year_candidate:
+                year_str = year_candidate
+            if cls._should_skip_row(arr, year_str):
                 continue
             d_list.append(cls.parse_row(arr, year_str))
         return d_list
